@@ -11,8 +11,6 @@ This project showcases how to integrate multiple sensors with Arduino Uno to cre
 **Key Capabilities:**
 - ✅ Real-time temperature monitoring
 - ✅ Accurate distance measurement
-- ✅ Serial data transmission
-- ✅ Easy data visualization
 
 ---
 
@@ -22,8 +20,6 @@ This project showcases how to integrate multiple sensors with Arduino Uno to cre
 |---------|-------------|
 | **Temperature Sensing** | Real-time temperature data collection with high accuracy |
 | **Distance Measurement** | Ultrasonic sensor for non-contact distance detection |
-| **Data Logging** | Serial output for monitoring and logging sensor data |
-| **Low Power Consumption** | Efficient Arduino implementation |
 | **Easy Integration** | Simple wiring and straightforward code |
 
 ---
@@ -32,9 +28,8 @@ This project showcases how to integrate multiple sensors with Arduino Uno to cre
 
 ### Components Needed:
 - **Arduino Uno** (Microcontroller)
-- **Temperature Sensor** (Choose one):
-  - DHT11/DHT22 (Digital Temperature & Humidity)
-  - LM35 (Analog Temperature Sensor)
+- **Temperature Sensor** :
+  - Temperature Sensor [TMP36]
 - **Ultrasonic Sensor** (HC-SR04)
   - Measurement Range: 2cm - 400cm
   - Accuracy: ±3mm
@@ -48,8 +43,7 @@ This project showcases how to integrate multiple sensors with Arduino Uno to cre
 ```
 Arduino Pin | Sensor | Connection
 ------------|--------|------------
-A0/A1       | Analog | LM35 (if used)
-D2          | DHT    | Data Pin (if DHT used)
+D2          | DHT    | Data Pin
 D9          | HC-SR04| Trigger Pin
 D10         | HC-SR04| Echo Pin
 5V          | All    | Power
@@ -208,7 +202,6 @@ void loop() {
 - 🌡️ Environmental Monitoring Systems
 - 🤖 Robotics and Obstacle Detection
 - 📍 Distance Measurement Tools
-- 🌿 Greenhouse Temperature Control
 
 ---
 
@@ -251,5 +244,3 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 
 ### Quick Links
 - [Arduino Official Website](https://www.arduino.cc/)
-- [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library)
-- [HC-SR04 Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Ultrasonic/HC-SR04.pdf)
